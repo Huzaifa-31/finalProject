@@ -5,14 +5,18 @@ const SignIn = () => {
   const [userInput, setUserInput] = useState({ email: "", password: "" });
   const [isDisable, setIsDisable] = useState(true);
 
-  // const handelTrue = (value) => {
-  //   setIsDisable(value);
-  // };
-
-  const handelChange = (e) => {
+  const handleSignIn = async (e) => {
     e.preventDefault();
-
-    console.log(userInput);
+    const obj = { email: userInput.email, password: userInput.password };
+    const response = await fetch("http://localhost:3000/signin", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(obj),
+    });
+    const json = await response.json();
+    console.log(json);
   };
 
   const change = (e) => {
@@ -30,7 +34,7 @@ const SignIn = () => {
         <div className="shape"></div>
         <div className="shape"></div>
       </div>
-      <form onSubmit={handelChange}>
+      <form onSubmit={handleSignIn}>
         <h3>Sign In Here</h3>
 
         <label for="username">Email</label>

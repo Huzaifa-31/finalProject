@@ -11,46 +11,46 @@ const SignUp = () => {
 
   // const navigate = useNavigate();
 
-  // const newUser = {
-  //   fullname,
-  //   email,
-  //   password,
-  //   confirmationPassword,
-  // };
+  const newUser = {
+    name: fullname,
+    email: email,
+    password: password,
+    cpassword: confirmationPassword,
+  };
 
-  // const handleCLickSignup = async (e) => {
-  //   e.preventDefault();
+  const handleCLickSignup = async (e) => {
+    e.preventDefault();
 
-  //   console.log(newUser);
+    console.log(newUser);
 
-  //   const url = "http://localhost:3001/auth/signup";
+    const url = "http://localhost:3000/signup";
 
-  //   if (password === confirmationPassword) {
-  //     try {
-  //       const response = await fetch(url, {
-  //         method: "POST",
+    if (password === confirmationPassword) {
+      try {
+        const response = await fetch(url, {
+          method: "POST",
 
-  //         headers: { "Content-Type": "application/json" },
+          headers: { "Content-Type": "application/json" },
 
-  //         body: JSON.stringify(newUser),
-  //       });
+          body: JSON.stringify(newUser),
+        });
 
-  //       const userData = await response.json();
-  //       console.log(userData);
+        const userData = await response.json();
+        console.log(userData);
 
-  //       if (response.ok) {
-  //         navigate("/home");
-  //       }
-  //     } catch (error) {
-  //       console.log(error);
-  //     }
-  //   } else {
-  //     setFullName("");
-  //     setEmail("");
-  //     setPassword("");
-  //     setConfirmationPassword("");
-  //   }
-  // };
+        if (response.ok) {
+          // navigate("/");
+        }
+      } catch (error) {
+        console.log(error);
+      }
+    } else {
+      setFullName("");
+      setEmail("");
+      setPassword("");
+      setConfirmationPassword("");
+    }
+  };
 
   return (
     <>
@@ -99,7 +99,7 @@ const SignUp = () => {
             onChange={(e) => setConfirmationPassword(e.target.value)}
           />
 
-          {/* <button onClick={handleCLickSignup}>Sign Up</button> */}
+          <button onClick={handleCLickSignup}>Sign Up</button>
 
           <div className="row pt-3 me-0 ">
             <p className="  col-8">
