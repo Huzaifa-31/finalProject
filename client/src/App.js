@@ -2,8 +2,10 @@ import React from "react";
 // import Navbarpage from "./components/Navbarpage";
 // import SignIn from "./components/SignIn";
 // import Signinup from "./components/signinup/Signinup";
-import SignInUpContainer from "./container";
+// import SignInUpContainer from "./container";
 // import Home from "./components/pages/Home";
+// import Carpost from "./components/carpost";
+import Hometmp from "./components/hometmp";
 
 function App() {
   return (
@@ -12,7 +14,9 @@ function App() {
       {/* <SignIn /> */}
       {/* <Signinup /> */}
       {/* <Home /> */}
-      <SignInUpContainer />
+      {/* <SignInUpContainer /> */}
+      {/* <Carpost /> */}
+      <Hometmp />
     </>
   );
 }

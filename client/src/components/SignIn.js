@@ -30,42 +30,44 @@ const SignIn = () => {
 
   return (
     <>
-      <div className="background">
-        <div className="shape"></div>
-        <div className="shape"></div>
-      </div>
-      <form onSubmit={handleSignIn}>
-        <h3>Sign In Here</h3>
-
-        <label for="username">Email</label>
-        <input
-          type="email"
-          placeholder="Email"
-          id="username"
-          onChange={change}
-          name="email"
-          value={userInput.email}
-        />
-
-        <label for="password">Password</label>
-        <input
-          type="password"
-          placeholder="Password"
-          id="password"
-          onChange={change}
-          name="password"
-          value={userInput.password}
-        />
-        <button type="submit" disabled={isDisable}>
-          Sign In
-        </button>
-        <div className="row pt-3 me-0 ">
-          <p className="  col-8">New User?</p>
-          <a className="text-center col " href="/">
-            Sign Up
-          </a>
+      <div>
+        <div className="background">
+          <div className="shape"></div>
+          <div className="shape"></div>
         </div>
-      </form>
+        <form onSubmit={handleSignIn}>
+          <h3>Sign In Here</h3>
+
+          <label for="username">Email</label>
+          <input
+            type="email"
+            placeholder="Email"
+            id="username"
+            onChange={change}
+            name="email"
+            value={userInput.email}
+          />
+
+          <label for="password">Password</label>
+          <input
+            type="password"
+            placeholder="Password"
+            id="password"
+            onChange={change}
+            name="password"
+            value={userInput.password}
+          />
+          <button type="submit" disabled={isDisable}>
+            Sign In
+          </button>
+          <div className="row pt-3 me-0 ">
+            <p className="  col-8">New User?</p>
+            <a className="text-center col " href="/">
+              Sign Up
+            </a>
+          </div>
+        </form>
+      </div>
     </>
   );
 };

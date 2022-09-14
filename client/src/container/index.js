@@ -1,22 +1,21 @@
-import React, {useState} from 'react'
-import Paper from '@mui/material/Paper';
-import Tabs from '@mui/material/Tabs';
-import Tab from '@mui/material/Tab';
-import Typography from '@mui/material/Typography';
-import Box from '@mui/material/Box';
-import SignIn from '../components/SignIn'
-import SignUp from '../components/SignUp'
+import React, { useState } from "react";
+import Paper from "@mui/material/Paper";
+import Tabs from "@mui/material/Tabs";
+import Tab from "@mui/material/Tab";
+import Typography from "@mui/material/Typography";
+import Box from "@mui/material/Box";
+import SignIn from "../components/SignIn";
+import SignUp from "../components/SignUp";
 
 const SignInUpContainer = () => {
-
-    const [value, setValue] = useState(0);
-    const handleChange = (event, newValue) => {
-        setValue(newValue);
-      };
-      const paperstyle = {width:700 }
-function TabPanel(props) {
+  const [value, setValue] = useState(0);
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
+  const paperstyle = { width: 700 };
+  function TabPanel(props) {
     const { children, value, index, ...other } = props;
-  
+
     return (
       <div
         role="tabpanel"
@@ -34,19 +33,23 @@ function TabPanel(props) {
     );
   }
   return (
-    <Paper  style={paperstyle}>
-    <Tabs value={value} onChange={handleChange} aria-label="disabled tabs example">
-    <Tab label="SignIn" />
-    <Tab label="SignUp" />
-  </Tabs>
-        <TabPanel value={value} index={0} >
-          <SignIn/>
-        </TabPanel>
-        <TabPanel value={value} index={1} >
-          <SignUp/>
-        </TabPanel>
-  </Paper>
-  )
-}
+    <Paper style={paperstyle}>
+      <Tabs
+        value={value}
+        onChange={handleChange}
+        aria-label="disabled tabs example"
+      >
+        <Tab label="SignIn" />
+        <Tab label="SignUp" />
+      </Tabs>
+      <TabPanel value={value} index={0}>
+        <SignIn />
+      </TabPanel>
+      <TabPanel value={value} index={1}>
+        <SignUp />
+      </TabPanel>
+    </Paper>
+  );
+};
 
-export default SignInUpContainer
+export default SignInUpContainer;
