@@ -1,7 +1,7 @@
 import React from "react";
 // import Navbarpage from "./components/Navbarpage";
-import SignIn from "./components/SignIn";
-import SignUp from "./components/signinup/Signinup";
+// import SignIn from "./components/SignIn";
+// import SignUp from "./components/signinup/Signinup";
 import SignInUpContainer from "./container";
 
 import Carpost from "./components/carpost";
@@ -13,9 +13,9 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/signin" element={<SignIn />} />
-        <Route path="/signup" element={<SignUp />} />
-        <Route path="/signup" element={<SignInUpContainer />} />
+        {/* <Route path="/signin" element={<SignIn />} /> */}
+        {/* <Route path="/signup" element={<SignUp />} /> */}
+        <Route path="/signinup" element={<SignInUpContainer />} />
 
         <Route path="/" element={<Hometmp />} />
 

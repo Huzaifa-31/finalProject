@@ -46,48 +46,7 @@ const hometmp = () => {
                   Team
                 </a>
               </li>
-              <li class="dropdown">
-                <a href="/">
-                  <span>Drop Down</span> <i class="bi bi-chevron-down"></i>
-                </a>
-                <ul>
-                  <li>
-                    <a href="/">Drop Down 1</a>
-                  </li>
-                  <li class="dropdown">
-                    <a href="/">
-                      <span>Deep Drop Down</span>{" "}
-                      <i class="bi bi-chevron-right"></i>
-                    </a>
-                    <ul>
-                      <li>
-                        <a href="/">Deep Drop Down 1</a>
-                      </li>
-                      <li>
-                        <a href="/">Deep Drop Down 2</a>
-                      </li>
-                      <li>
-                        <a href="/">Deep Drop Down 3</a>
-                      </li>
-                      <li>
-                        <a href="/">Deep Drop Down 4</a>
-                      </li>
-                      <li>
-                        <a href="/">Deep Drop Down 5</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="/">Drop Down 2</a>
-                  </li>
-                  <li>
-                    <a href="/">Drop Down 3</a>
-                  </li>
-                  <li>
-                    <a href="/">Drop Down 4</a>
-                  </li>
-                </ul>
-              </li>
+
               <li>
                 <a class="nav-link scrollto" href="#contact">
                   Contact
@@ -197,10 +156,6 @@ const hometmp = () => {
       </section>
       <section id="about" class="about">
         <div class="container" data-aos="fade-up">
-          <div class="section-title">
-            <h2>About Us</h2>
-          </div>
-
           <div class="row content">
             <div class="col-lg-6">
               <p>
@@ -241,12 +196,19 @@ const hometmp = () => {
       <section id="why-us" class="why-us section-bg">
         <div class="container-fluid" data-aos="fade-up">
           <div class="row">
-            <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
+            <div
+              class="col-lg-5 align-items-stretch order-1 order-lg-1 img"
+              style={{ backgroundImage: `url(${background})` }}
+              data-aos="zoom-in"
+              data-aos-delay="150"
+            >
+              &nbsp;
+            </div>
+            <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-2">
               <div class="content">
-                <h3>
-                  Eum ipsam laborum deleniti
-                  <strong>velit pariatur architecto aut nihil</strong>
-                </h3>
+                <div class="section-title">
+                  <h2>About Us</h2>
+                </div>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -334,18 +296,285 @@ const hometmp = () => {
                 </ul>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      <section id="services" class="services section">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Services</h2>
+            <p>
+              Magnam dolores commodi suscipit. Necessitatibus eius consequatur
+              ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
+              quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
+              Quia fugiat sit in iste officiis commodi quidem hic quas.
+            </p>
+          </div>
+
+          <div class="row">
+            <div
+              class="col-xl-3 col-md-6 d-flex align-items-stretch"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <div class="icon-box">
+                <div class="icon">
+                  <i class="bx bxl-dribbble"></i>
+                </div>
+                <h4>
+                  <a href="">Lorem Ipsum</a>
+                </h4>
+                <p>
+                  Voluptatum deleniti atque corrupti quos dolores et quas
+                  molestias excepturi
+                </p>
+              </div>
+            </div>
 
             <div
-              class="col-lg-5 align-items-stretch order-1 order-lg-2 img"
-              style={{ backgroundImage: `url(${background})` }}
+              class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0"
               data-aos="zoom-in"
-              data-aos-delay="150"
+              data-aos-delay="200"
             >
-              &nbsp;
+              <div class="icon-box">
+                <div class="icon">
+                  <i class="bx bx-file"></i>
+                </div>
+                <h4>
+                  <a href="">Sed ut perspici</a>
+                </h4>
+                <p>
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0"
+              data-aos="zoom-in"
+              data-aos-delay="300"
+            >
+              <div class="icon-box">
+                <div class="icon">
+                  <i class="bx bx-tachometer"></i>
+                </div>
+                <h4>
+                  <a href="">Magni Dolores</a>
+                </h4>
+                <p>
+                  Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                  qui officia
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0"
+              data-aos="zoom-in"
+              data-aos-delay="400"
+            >
+              <div class="icon-box">
+                <div class="icon">
+                  <i class="bx bx-layer"></i>
+                </div>
+                <h4>
+                  <a href="">Nemo Enim</a>
+                </h4>
+                <p>
+                  At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                  blanditiis
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
+      <section className=" section-bg">
+        <div class="container-fluid py-5">
+          <div class="container pt-5 pb-3 section-title">
+            <h2 class="display-4 text-uppercase text-center mb-5">
+              Find Your Car
+            </h2>
+            <div class="row">
+              <div class="col-lg-4 col-md-6 mb-2">
+                <div class="rent-item mb-4">
+                  <img
+                    class="img-fluid mb-4"
+                    src={require("./assets/img/car-rent-1.png")}
+                    alt=""
+                  />
+                  <h4 class="text-uppercase mb-4">Mercedes Benz R3</h4>
+                  <div class="d-flex justify-content-center mb-4">
+                    <div class="px-2">
+                      <i class="fa fa-car text-primary mr-1"></i>
+                      <span>2015</span>
+                    </div>
+                    <div class="px-2 border-left border-right">
+                      <i class="fa fa-cogs text-primary mr-1"></i>
+                      <span>AUTO</span>
+                    </div>
+                    <div class="px-2">
+                      <i class="fa fa-road text-primary mr-1"></i>
+                      <span>25K</span>
+                    </div>
+                  </div>
+                  <a class="btn btn-primary px-3" href="">
+                    $99.00/Day
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 mb-2">
+                <div class="rent-item active mb-4">
+                  <img
+                    class="img-fluid mb-4"
+                    src={require("./assets/img/car-rent-2.png")}
+                    alt=""
+                  />
+                  <h4 class="text-uppercase mb-4">Mercedes Benz R3</h4>
+                  <div class="d-flex justify-content-center mb-4">
+                    <div class="px-2">
+                      <i class="fa fa-car text-primary mr-1"></i>
+                      <span>2015</span>
+                    </div>
+                    <div class="px-2 border-left border-right">
+                      <i class="fa fa-cogs text-primary mr-1"></i>
+                      <span>AUTO</span>
+                    </div>
+                    <div class="px-2">
+                      <i class="fa fa-road text-primary mr-1"></i>
+                      <span>25K</span>
+                    </div>
+                  </div>
+                  <a class="btn btn-primary px-3" href="">
+                    $99.00/Day
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 mb-2">
+                <div class="rent-item mb-4">
+                  <img
+                    class="img-fluid mb-4"
+                    src={require("./assets/img/car-rent-3.png")}
+                    alt=""
+                  />
+                  <h4 class="text-uppercase mb-4">Mercedes Benz R3</h4>
+                  <div class="d-flex justify-content-center mb-4">
+                    <div class="px-2">
+                      <i class="fa fa-car text-primary mr-1"></i>
+                      <span>2015</span>
+                    </div>
+                    <div class="px-2 border-left border-right">
+                      <i class="fa fa-cogs text-primary mr-1"></i>
+                      <span>AUTO</span>
+                    </div>
+                    <div class="px-2">
+                      <i class="fa fa-road text-primary mr-1"></i>
+                      <span>25K</span>
+                    </div>
+                  </div>
+                  <a class="btn btn-primary px-3" href="">
+                    $99.00/Day
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 mb-2">
+                <div class="rent-item mb-4">
+                  <img
+                    class="img-fluid mb-4"
+                    src={require("./assets/img/car-rent-4.png")}
+                    alt=""
+                  />
+                  <h4 class="text-uppercase mb-4">Mercedes Benz R3</h4>
+                  <div class="d-flex justify-content-center mb-4">
+                    <div class="px-2">
+                      <i class="fa fa-car text-primary mr-1"></i>
+                      <span>2015</span>
+                    </div>
+                    <div class="px-2 border-left border-right">
+                      <i class="fa fa-cogs text-primary mr-1"></i>
+                      <span>AUTO</span>
+                    </div>
+                    <div class="px-2">
+                      <i class="fa fa-road text-primary mr-1"></i>
+                      <span>25K</span>
+                    </div>
+                  </div>
+                  <a class="btn btn-primary px-3" href="">
+                    $99.00/Day
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 mb-2">
+                <div class="rent-item mb-4">
+                  <img
+                    class="img-fluid mb-4"
+                    src={require("./assets/img/car-rent-5.png")}
+                    alt=""
+                  />
+                  <h4 class="text-uppercase mb-4">Mercedes Benz R3</h4>
+                  <div class="d-flex justify-content-center mb-4">
+                    <div class="px-2">
+                      <i class="fa fa-car text-primary mr-1"></i>
+                      <span>2015</span>
+                    </div>
+                    <div class="px-2 border-left border-right">
+                      <i class="fa fa-cogs text-primary mr-1"></i>
+                      <span>AUTO</span>
+                    </div>
+                    <div class="px-2">
+                      <i class="fa fa-road text-primary mr-1"></i>
+                      <span>25K</span>
+                    </div>
+                  </div>
+                  <a class="btn btn-primary px-3" href="">
+                    $99.00/Day
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 mb-2">
+                <div class="rent-item mb-4">
+                  <img
+                    class="img-fluid mb-4"
+                    src={require("./assets/img/car-rent-6.png")}
+                    alt=""
+                  />
+                  <h4 class="text-uppercase mb-4">Mercedes Benz R3</h4>
+                  <div class="d-flex justify-content-center mb-4">
+                    <div class="px-2">
+                      <i class="fa fa-car text-primary mr-1"></i>
+                      <span>2015</span>
+                    </div>
+                    <div class="px-2 border-left border-right">
+                      <i class="fa fa-cogs text-primary mr-1"></i>
+                      <span>AUTO</span>
+                    </div>
+                    <div class="px-2">
+                      <i class="fa fa-road text-primary mr-1"></i>
+                      <span>25K</span>
+                    </div>
+                  </div>
+                  <a class="btn btn-primary px-3" href="">
+                    $99.00/Day
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer id="footer">
+        <div class="container footer-bottom clearfix">
+          <div class="copyright">
+            &copy; Copyright{" "}
+            <strong>
+              <span>CAR</span>
+            </strong>
+            . All Rights Reserved
+          </div>
+          <div class="credits">Designed by CarRent</div>
+        </div>
+      </footer>
     </>
   );
 };

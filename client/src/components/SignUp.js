@@ -2,6 +2,7 @@ import React from "react";
 // import { Link } from "react-router-dom";
 // import { useNavigate } from "react-router-dom";
 // import "./signup.css";
+// import "./style.css";
 
 const SignUp = () => {
   const [fullname, setFullName] = React.useState("");

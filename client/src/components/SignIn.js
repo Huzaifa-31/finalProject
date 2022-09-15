@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./style.css";
+import SignInS from "./style.module.css";
 
 const SignIn = () => {
   const [userInput, setUserInput] = useState({ email: "", password: "" });
@@ -30,12 +30,17 @@ const SignIn = () => {
 
   return (
     <>
+      <style>
+        {
+          "body {background-color:#080710} .background { width: 430px; height: 520px; position: absolute ; transform: translate(-50%; -50%); left: 50%; top: 50%;z-index: -100} button { margin-top: 50px;width: 100%;background-color: #ffffff;color: #080710;padding: 15px 0;font-size: 18px;font-weight: 600;border-radius: 5px;cursor: pointer}"
+        }
+      </style>
       <div>
-        <div className="background">
-          <div className="shape"></div>
-          <div className="shape"></div>
+        <div className={SignInS.background}>
+          <div className={SignInS.shape}></div>
+          <div className={SignInS.shape}></div>
         </div>
-        <form onSubmit={handleSignIn}>
+        <form className={SignInS.form} onSubmit={handleSignIn}>
           <h3>Sign In Here</h3>
 
           <label for="username">Email</label>
