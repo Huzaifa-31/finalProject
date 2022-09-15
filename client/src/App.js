@@ -4,7 +4,7 @@ import React from "react";
 // import SignUp from "./components/signinup/Signinup";
 import SignInUpContainer from "./container";
 
-import Carpost from "./components/carpost";
+import Carpost from "./components/Carpost";
 
 import { Routes, Route } from "react-router-dom";
 import Hometmp from "./components/hometmp";

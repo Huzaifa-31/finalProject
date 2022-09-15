@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import SignInS from "./style.module.css";
+import "./stylein.css";
 
 const SignIn = () => {
   const [userInput, setUserInput] = useState({ email: "", password: "" });
@@ -32,19 +32,22 @@ const SignIn = () => {
     <>
       <style>
         {
-          "body {background-color:#080710} .background { width: 430px; height: 520px; position: absolute ; transform: translate(-50%; -50%); left: 50%; top: 50%;z-index: -100} button { margin-top: 50px;width: 100%;background-color: #ffffff;color: #080710;padding: 15px 0;font-size: 18px;font-weight: 600;border-radius: 5px;cursor: pointer}"
+          "body {background-color:#080710} .background { width: 430px; height: 520px; position: absolute ; transform: translate(-50% -50%); left: 50%; top: 50%;z-index: -100}"
         }
       </style>
       <div>
-        <div className={SignInS.background}>
-          <div className={SignInS.shape}></div>
-          <div className={SignInS.shape}></div>
+        <div className="backgroundin">
+          <div className="shapein"></div>
+          <div className="shapein"></div>
         </div>
-        <form className={SignInS.form} onSubmit={handleSignIn}>
+        <form className="formin" onSubmit={handleSignIn}>
           <h3>Sign In Here</h3>
 
-          <label for="username">Email</label>
+          <label className="labelin" for="username">
+            Email
+          </label>
           <input
+            className="inputin"
             type="email"
             placeholder="Email"
             id="username"
@@ -53,8 +56,11 @@ const SignIn = () => {
             value={userInput.email}
           />
 
-          <label for="password">Password</label>
+          <label className="labelin" for="password">
+            Password
+          </label>
           <input
+            className="inputin"
             type="password"
             placeholder="Password"
             id="password"
@@ -62,7 +68,7 @@ const SignIn = () => {
             name="password"
             value={userInput.password}
           />
-          <button type="submit" disabled={isDisable}>
+          <button className="btnin" type="submit" disabled={isDisable}>
             Sign In
           </button>
           <div className="row pt-3 me-0 ">

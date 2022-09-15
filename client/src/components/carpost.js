@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
@@ -6,8 +6,8 @@ import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import Row from "react-bootstrap/Row";
 import FloatingLabel from "react-bootstrap/FloatingLabel";
-const carpost = () => {
-  // const [car_make, setCar_make] = useState("");
+const Carpost = () => {
+  const [car_make, setCar_make] = useState("");
   // const [car_modal, setCar_modal] = useState("");
   // const [car_varient, setcar_Varient] = useState("");
   // const [fule_avg, setFule_avg] = useState("");
@@ -21,6 +21,21 @@ const carpost = () => {
   // const [discription, setDiscription] = useState("");
   // const [rent_price, setRent_price] = useState("");
 
+  const newCarPost = {
+    car_make: car_make,
+    // car_modal: car_modal,
+    // car_varient: car_varient,
+    // fule_avg: fule_avg,
+    // seats: seats,
+    // bags: bags,
+    // body_type: body_type,
+    // color: color,
+    // engine_type: engine_type,
+    // transmission: transmission,
+    // car_image: car_image,
+    // discription: discription,
+    // rent_price: rent_price,
+  };
   return (
     <>
       <Container className="bg-dark pt-2 pb-4 mt-4">
@@ -65,7 +80,12 @@ const carpost = () => {
                       label="Car Make"
                       className="mb-3"
                     >
-                      <Form.Control type="text" placeholder=" " />
+                      <Form.Control
+                        type="text"
+                        placeholder=" "
+                        value={car_make}
+                        onChange={(e) => setCar_make(e.target.value)}
+                      />
                     </FloatingLabel>
                     <FloatingLabel
                       controlId="floatingInput"
@@ -172,4 +192,4 @@ const carpost = () => {
   );
 };
 
-export default carpost;
+export default Carpost;
