@@ -5,11 +5,7 @@
   margin: 0;
   box-sizing: border-box;
 }
-/* body {
-  background-color: #080710;
-} */
-
-.backgroundin {
+.backgroundup {
   width: 430px;
   height: 520px;
   position: absolute;
@@ -18,24 +14,24 @@
   top: 50%;
   z-index: -100;
 }
-.backgroundin .shapein {
+.backgroundup .shapeup {
   height: 200px;
   width: 200px;
   position: absolute;
   border-radius: 50%;
 }
-.shapein:first-child {
+.shapeup:first-child {
   background: linear-gradient(#1845ad, #23a2f6);
   left: -80px;
   top: -80px;
 }
-.shapein:last-child {
+.shapeup:last-child {
   background: linear-gradient(to right, #ff512f, #f09819);
   right: -30px;
   bottom: -80px;
 }
-.formin {
-  height: 520px;
+.formup {
+  height: 750px;
   width: 400px;
   background-color: rgba(255, 255, 255, 0.13);
   position: absolute;
@@ -48,27 +44,27 @@
   box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
   padding: 50px 35px;
 }
-.formin * {
+.formup * {
   font-family: "Poppins", sans-serif;
   color: #ffffff;
   letter-spacing: 0.5px;
   outline: none;
   border: none;
 }
-.formin h3 {
+.formup h3 {
   font-size: 32px;
   font-weight: 500;
   line-height: 42px;
   text-align: center;
 }
 
-.labelin {
+.labelup {
   display: block;
   margin-top: 30px;
   font-size: 16px;
   font-weight: 500;
 }
-.inputin {
+.inputup {
   display: block;
   height: 50px;
   width: 100%;
@@ -79,11 +75,8 @@
   font-size: 14px;
   font-weight: 300;
 }
-::placeholder {
-  color: #e5e5e5;
-}
 
-.btnin {
+.btnup {
   margin-top: 50px;
   width: 100%;
   background-color: #ffffff;

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./stylein.css";
 
-const SignIn = () => {
+const SignIn = ({ handleChange }) => {
   const [userInput, setUserInput] = useState({ email: "", password: "" });
   const [isDisable, setIsDisable] = useState(true);
 
@@ -30,11 +30,7 @@ const SignIn = () => {
 
   return (
     <>
-      <style>
-        {
-          "body {background-color:#080710} .background { width: 430px; height: 520px; position: absolute ; transform: translate(-50% -50%); left: 50%; top: 50%;z-index: -100}"
-        }
-      </style>
+      <style>{"body {background-color:#080710}"}</style>
       <div>
         <div className="backgroundin">
           <div className="shapein"></div>
@@ -73,7 +69,13 @@ const SignIn = () => {
           </button>
           <div className="row pt-3 me-0 ">
             <p className="  col-8">New User?</p>
-            <a className="text-center col " href="/">
+            <a
+              className="text-center col "
+              href="#"
+              onClick={() => {
+                handleChange("event", 1);
+              }}
+            >
               Sign Up
             </a>
           </div>

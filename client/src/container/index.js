@@ -12,7 +12,8 @@ const SignInUpContainer = () => {
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
-  const paperstyle = { width: 700 };
+  const paperstyle = { width: 200, margin: "10px auto" };
+
   function TabPanel(props) {
     const { children, value, index, ...other } = props;
 
@@ -25,7 +26,7 @@ const SignInUpContainer = () => {
         {...other}
       >
         {value === index && (
-          <Box sx={{ p: 3 }}>
+          <Box>
             <Typography>{children}</Typography>
           </Box>
         )}
@@ -34,19 +35,15 @@ const SignInUpContainer = () => {
   }
   return (
     <Paper style={paperstyle}>
-      <Tabs
-        value={value}
-        onChange={handleChange}
-        aria-label="disabled tabs example"
-      >
+      <Tabs value={value} onChange={handleChange} aria-label=" tabs">
         <Tab label="SignIn" />
         <Tab label="SignUp" />
       </Tabs>
       <TabPanel value={value} index={0}>
-        <SignIn />
+        <SignIn handleChange={handleChange} />
       </TabPanel>
       <TabPanel value={value} index={1}>
-        <SignUp />
+        <SignUp handleChange={handleChange} />
       </TabPanel>
     </Paper>
   );
