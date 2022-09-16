@@ -73,8 +73,7 @@ h6 {
 
 .back-to-top {
   position: fixed;
-  visibility: hidden;
-  opacity: 0;
+
   right: 15px;
   bottom: 15px;
   z-index: 996;
@@ -85,7 +84,7 @@ h6 {
   transition: all 0.4s;
 }
 
-.back-to-top i {
+.back-to-top {
   font-size: 24px;
   color: #fff;
   line-height: 0;
@@ -96,19 +95,10 @@ h6 {
   color: #fff;
 }
 
-.back-to-top.active {
-  visibility: visible;
-  opacity: 1;
-}
-
 #header {
   transition: all 0.5s;
   z-index: 997;
   padding: 15px 0;
-}
-
-#header.header-scrolled,
-#header.header-inner-pages {
   background: rgba(40, 58, 90, 0.9);
 }
 

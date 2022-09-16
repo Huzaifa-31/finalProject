@@ -1,6 +1,6 @@
 import React from "react";
-// import "./assets/vendor/aos/aos.css";
-
+import ArrowCircleUpRoundedIcon from "@mui/icons-material/ArrowCircleUpRounded";
+// vendor css
 import "./assets/vendor/bootstrap/css/bootstrap.min.css";
 import "./assets/vendor/boxicons/css/boxicons.min.css";
 import "./assets/vendor/glightbox/css/glightbox.min.css";
@@ -8,15 +8,18 @@ import "./assets/vendor/remixicon/remixicon.css";
 import "./assets/vendor/bootstrap-icons/bootstrap-icons.css";
 import "./assets/vendor/swiper/swiper-bundle.min.css";
 import img from "./assets/img/img-car.png";
+
+//assets main
 import "./assets/css/style.css";
 import background from "./assets/img/why-us.png";
+
 const hometmp = () => {
   return (
     <>
       <header id="header" class="fixed-top ">
         <div class="container d-flex align-items-center">
           <h1 class="logo me-auto">
-            <a href="index.html">Arsha</a>
+            <a href="/">CAR RENTAL</a>
           </h1>
 
           <nav id="navbar" class="navbar">
@@ -37,19 +40,8 @@ const hometmp = () => {
                 </a>
               </li>
               <li>
-                <a class="nav-link   scrollto" href="#portfolio">
-                  Portfolio
-                </a>
-              </li>
-              <li>
-                <a class="nav-link scrollto" href="#team">
-                  Team
-                </a>
-              </li>
-
-              <li>
-                <a class="nav-link scrollto" href="#contact">
-                  Contact
+                <a class="nav-link   scrollto" href="#cars">
+                  Cars
                 </a>
               </li>
               <li>
@@ -154,6 +146,7 @@ const hometmp = () => {
           </div>
         </div>
       </section>
+      {/* about section */}
       <section id="about" class="about">
         <div class="container" data-aos="fade-up">
           <div class="row content">
@@ -575,6 +568,13 @@ const hometmp = () => {
           <div class="credits">Designed by CarRent</div>
         </div>
       </footer>
+
+      <div
+        href="#"
+        class="back-to-top d-flex align-items-center justify-content-center"
+      >
+        <ArrowCircleUpRoundedIcon />
+      </div>
     </>
   );
 };
